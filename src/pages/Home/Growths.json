@@ -1,0 +1,45 @@
+[
+    {
+        "Name":"Ciências da Computação",
+        "Period":"2023 - 2027",
+        "Texts":[
+            "Bacharelado em Ciências da Computação",
+            "Nota 5 no MAC"
+        ],
+        "Institution":"Unima Alagoas",
+        "CertificateURL":""
+    },
+    {
+        "Name":"Formação Java",
+        "Period":"2020",
+        "Texts":[
+            "Formação completa Java",
+            "POO",
+            "Threads"
+        ],
+        "Institution":"Alura",
+        "CertificateURL":"https://cursos.alura.com.br/degree/certificate/43724c02-424a-48ad-a011-1cc13d52fe4b?lang=pt_BR"
+    },
+    {
+        "Name":"Formação Java",
+        "Period":"2020",
+        "Texts":[
+            "Formação completa Java",
+            "POO",
+            "Threads"
+        ],
+        "Institution":"Alura",
+        "CertificateURL":"https://cursos.alura.com.br/degree/certificate/43724c02-424a-48ad-a011-1cc13d52fe4b?lang=pt_BR"
+    },
+    {
+        "Name":"Formação Java",
+        "Period":"2020",
+        "Texts":[
+            "Formação completa Java",
+            "POO",
+            "Threads"
+        ],
+        "Institution":"Alura",
+        "CertificateURL":"https://cursos.alura.com.br/degree/certificate/43724c02-424a-48ad-a011-1cc13d52fe4b?lang=pt_BR"
+    }
+]

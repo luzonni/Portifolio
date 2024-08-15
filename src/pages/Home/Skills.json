@@ -1,0 +1,22 @@
+[
+    {
+        "Name":"Java",
+        "Percent":90
+    },
+    {
+        "Name":"JavaScript",
+        "Percent":60
+    },
+    {
+        "Name":"TypeScript",
+        "Percent":20
+    },
+    {
+        "Name":"Kotlin",
+        "Percent":55
+    },
+    {
+        "Name":"Python",
+        "Percent":50
+    }
+]
