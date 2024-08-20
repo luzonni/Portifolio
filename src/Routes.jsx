@@ -6,12 +6,14 @@ import AboutMe from "./pages/AboutMe"
 import NotFound from "./pages/NotFound"
 import Contact from "./pages/Contact"
 import Footer from "./components/Footer"
+import Message from "./components/Message"
 
 function AppRoutes() {
   return (
     <>
       <Reset />
       <BrowserRouter>
+        <Message>Site em desenvolvimento</Message>
         <MyHeader />
         <Routes>
           <Route path="/" element={<Home />} />
