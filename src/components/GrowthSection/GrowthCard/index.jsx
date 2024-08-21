@@ -102,8 +102,8 @@ const GrowthCard = ({Name, Period, Texts, Institution, CertificateURL}) => {
                 <PeriodStyle><h3>{Period}</h3></PeriodStyle>
                 <h1>{Name} {Institution && <strong> - {Institution}</strong>}</h1>
                 <ul>
-                    {Texts.map(text => {
-                        return (<li><p>{text}</p></li>)
+                    {Texts.map((text, index) => {
+                        return (<li key={index}><p>{text}</p></li>)
                     })}
                 </ul>
                 {CertificateURL && 

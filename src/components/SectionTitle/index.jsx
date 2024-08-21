@@ -9,8 +9,10 @@ const TitleStyle = styled.h1`
     }
 `
 
-const SectionTitle = ({ Text, Strong }) => {
-    return (<TitleStyle>{Text}<strong>{Strong}</strong></TitleStyle>)
+const SectionTitle = ({ children }) => {
+    return (
+        <TitleStyle>{children}</TitleStyle>
+    )
 }
 
 export default SectionTitle

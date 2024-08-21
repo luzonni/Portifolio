@@ -116,16 +116,16 @@ const ProjectCard = ({Name, Thumb, Icons, Texts, URL}) => {
             <Title>
                 <h1>{Name}</h1>
                 <div className="tools">
-                {Icons.map(icon => {
+                {Icons.map((icon, index) => {
                     return (
-                        <img src={icon} alt="icon"/>
+                        <img key={"pci-"+index} src={icon} alt="icon"/>
                     )
                 })}
                 </div>
             </Title>
             <hr />
-            {Texts.map(text => {
-                return (<p>{text}</p>)
+            {Texts.map((text, index) => {
+                return (<p key={"pct-"+index} >{text}</p>)
             })}
             <Link className="link" to={`/Projecrs/${Name}`}>Saiba mais</Link>
         </CardStyle>

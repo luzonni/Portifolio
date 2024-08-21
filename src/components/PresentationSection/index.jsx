@@ -10,7 +10,6 @@ const PresentationSectionStyle = styled.section`
     align-items: center;
     padding: 9rem auto;
     gap: 1.25rem;
-
     img {
         width: 20rem;
         border-radius: 20px;
@@ -45,7 +44,8 @@ const Content = styled.div`
     flex-direction: column;
     gap: 1rem;
     padding: 1.25rem;
-
+    backdrop-filter: blur(12px);
+    
     h1 {
         color: ${White};
         font-size: 1.75rem;

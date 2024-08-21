@@ -27,11 +27,12 @@ const ListGrowthsStyle = styled.div`
 const GrowthSection = ({Growths}) => {
     return (
         <GrowthSectionStyle>
-            <SectionTitle Text={"My "} Strong={"Growth"}/>
+            <SectionTitle>My <strong>Growth</strong></SectionTitle>
             <ListGrowthsStyle>
-                {Growths.map(growth => {
+                {Growths.map((growth, index) => {
                     return (
                         <GrowthCard 
+                            key={index}
                             Name={growth.Name}
                             Period={growth.Period}
                             Texts={growth.Texts}

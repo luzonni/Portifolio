@@ -1,22 +1,17 @@
 [
     {
-        "Name":"Java",
-        "Percent":90
+        "Type":"experience",
+        "Title":"Desenvolvimento FullStack com PHP e MySQL",
+        "Period":"01.2020 ~ 01.2021"
     },
     {
-        "Name":"JavaScript",
-        "Percent":60
+        "Type":"software",
+        "Title":"Jogo de estrategia",
+        "Period":"01.2022"
     },
     {
-        "Name":"TypeScript",
-        "Percent":20
-    },
-    {
-        "Name":"Kotlin",
-        "Percent":55
-    },
-    {
-        "Name":"Python",
-        "Percent":50
+        "Type":"language",
+        "Title":"Java",
+        "Period":"01.2020"
     }
 ]

@@ -24,11 +24,12 @@ const ListProjects = styled.div`
 const ProjectSection = ({Projects}) => {
     return (
         <ProjectSectionStyle>
-            <SectionTitle Text="My " Strong="Projects"/>
+            <SectionTitle>My <strong>Projects</strong></SectionTitle>
             <ListProjects>
-                {Projects.map(project => {
+                {Projects.map((project, index) => {
                     return (
                         <ProjectCard 
+                            key={"ps-"+index}
                             Name={project.Name}
                             Thumb={project.Thumb} 
                             Icons={project.Icons}

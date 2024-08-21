@@ -1,7 +1,8 @@
 import styled from "styled-components"
-import { ColorOne, White } from "../../assets/Colors"
-import SkillsItem from "./SkillsItem"
 import SectionTitle from "../SectionTitle"
+import { White } from "../../assets/Colors"
+import { useState } from "react"
+import Tab from "./Tab"
 
 const SkillsStyle = styled.section`
     color: ${White};
@@ -10,30 +11,22 @@ const SkillsStyle = styled.section`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    box-sizing: border-box;
+`
+const frameSkillsStyle = styled.div`
+    
 `
 
-const SkillsList = styled.div`
-    margin-top: 3rem;
-    display: flex;
-    justify-content: space-between;
-    @media screen and (max-width: 1080px) {
-        width: 20rem;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        padding: 1rem 0;
-        gap: 3rem;
-    }
-`
-
-const SkillsSection = ({Skills}) => {
+function SkillsSection({ Skills }) {
+    const tabs = ["Experience", "Software", "Language"]
+    const [indexTab, setIndexTab] = useState(0)
     return (
         <SkillsStyle>
-            <SectionTitle Text="My " Strong="Skills"/>
-            <SkillsList>
-                {Skills.map( skill => {
-                    return (<SkillsItem name={skill.Name} percent={skill.Percent}/>)
-                })}
-            </SkillsList>
+            <SectionTitle>My <strong>Skills</strong></SectionTitle>
+            <Tab Tabs={tabs} Index={indexTab} setTab={setIndexTab}/>
+            <frameSkillsStyle>
+
+            </frameSkillsStyle>
         </SkillsStyle>
     )
 }
