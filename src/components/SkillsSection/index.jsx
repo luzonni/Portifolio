@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import SectionTitle from "../SectionTitle"
-import { White } from "../../assets/Colors"
+import { ColorTwo, White } from "../../assets/Colors"
 import { useState } from "react"
 import Tab from "./Tab"
 
@@ -14,7 +14,13 @@ const SkillsStyle = styled.section`
     box-sizing: border-box;
 `
 const frameSkillsStyle = styled.div`
-    
+    display: flex;
+    padding: 2rem 4rem;
+`
+
+const cardSkillStyle = styled.div`
+    background: ${ColorTwo};
+    width: 100%;
 `
 
 function SkillsSection({ Skills }) {
@@ -25,7 +31,13 @@ function SkillsSection({ Skills }) {
             <SectionTitle>My <strong>Skills</strong></SectionTitle>
             <Tab Tabs={tabs} Index={indexTab} setTab={setIndexTab}/>
             <frameSkillsStyle>
-
+                {Skills.map(skill => {
+                    if(skill.Type.toLowerCase() === tabs[indexTab].toLowerCase()) {
+                        return (
+                            <cardSkillStyle>{skill.Title} - {skill.Period}</cardSkillStyle>
+                        )
+                    }
+                })}
             </frameSkillsStyle>
         </SkillsStyle>
     )

@@ -5,7 +5,7 @@ const TabStyle = styled.div`
     width: 100%;
     color: ${Gray};
     font-size: 1.5rem;
-    
+
     ul {
         display: flex;
         flex-direction: row;
@@ -30,12 +30,15 @@ const TabStyle = styled.div`
     }
 
     @media screen and (max-width: 1080px) {
+        font-size: 1em;
         li {
+            padding: 1rem 0;
             display: none;
         }
 
         .tab_button {
             display: block;
+            width: 30%;
         }
 
         .selected {
