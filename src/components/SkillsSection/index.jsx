@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import SectionTitle from "../SectionTitle"
-import { ColorTwo, Gray, White } from "../../assets/Colors"
+import { ColorOne, ColorTwo, Gray, White } from "../../assets/Colors"
 import { useState } from "react"
 import Tab from "./Tab"
 
@@ -12,6 +12,10 @@ const SkillsStyle = styled.section`
     flex-direction: column;
     gap: 2rem;
     box-sizing: border-box;
+
+    @media screen and (max-width: 1080px) {
+        width: 90%;
+    }
 `
 const FrameSkillsStyle = styled.div`
     display: flex;
@@ -32,6 +36,9 @@ const CardSkillStyle = styled.div`
     padding: 1rem 2rem;
     border-radius: 6px;
     font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     p {
         color: ${Gray};
@@ -39,7 +46,18 @@ const CardSkillStyle = styled.div`
     }
 
     hr {
+        width: 100%;
         border: 1px solid ${Gray};
+    }
+
+    a {
+        font-size: 1rem;
+        margin-top: 1rem;
+        background-color: ${ColorOne};
+        color: ${White};
+        text-decoration: none;
+        padding: 0.5rem 2rem;
+        border-radius: 5px;
     }
 
     @media screen and (max-width: 1080px) {
@@ -63,7 +81,7 @@ function SkillsSection({ Skills }) {
                             <hr />
                             <p>{skill.Period}</p>
                             {skill.Url && 
-                                <a href="{skill.Url}" target="_blank">teste</a>
+                                <a href={skill.Url} target="_blank">Veja sobre</a>
                             }
                         </CardSkillStyle>
                     )

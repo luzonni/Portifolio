@@ -1,9 +1,9 @@
 import PresentationSection from "../../components/PresentationSection"
 import ProjectSection from "../../components/ProjectSection"
 import SkillsSection from "../../components/SkillsSection"
-import Skills from "./Skills.json"
-import Projects from "./Projects.json"
-import Growths from "./Growths.json"
+import Skills from "../../assets/base/Skills.json"
+import Projects from "../../assets/base/Projects.json"
+import Growths from "../../assets/base/Growths.json"
 import GrowthSection from "../../components/GrowthSection"
 
 

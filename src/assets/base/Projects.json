@@ -14,11 +14,14 @@
         "Link":["https://github.com/luzonni/Wanderer"]
     },
     {
-        "Name":"Map Generator",
-        "Thumb":"./imgs/MapGenerator.png",
-        "Icons":["./icons/python.svg"],
-        "Texts":["Sandbox Game, um jogo de mundo aberto e geração aleatoria para explorar!"],
-        "Link":["https://github.com/luzonni/Wanderer"]
+        "Name":"Trom Game",
+        "Thumb":"https://github.com/user-attachments/assets/25f2ecf8-28e0-4b54-bc13-384f97d1a618",
+        "Icons":["./icons/java.svg"],
+        "Texts":[
+            "O famoso jogo Trom",
+            "Multplayer local para jogar com seus amigos!"
+        ],
+        "Link":["https://github.com/luzonni/Trom"]
     },
     {
         "Name":"Tile Creater",

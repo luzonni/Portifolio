@@ -1,7 +1,6 @@
 [
     [
         {
-            "Icon":"",
             "Title":"Desenvolvimento FullStack com PHP e MySQL",
             "Period":"01.2020 ~ 01.2021",
             "Url":""
@@ -9,21 +8,18 @@
     ],
     [
         {
-            "Icon":"",
             "Title":"Code Break's Escape",
             "Period":"01.2022",
-            "Url":"https://github.com/luzonni/CBE-Java"
+            "Url":"https://github.com/luzonni/Code-Breakers-Escape"
         }
     ],
     [
         {
-            "Icon":"",
             "Title":"Java",
             "Period":"01.2020",
             "Url":""
         },
         {
-            "Icon":"",
             "Title":"Kotlin",
             "Period":"01.2024 ~ 02.2024",
             "Url":""
