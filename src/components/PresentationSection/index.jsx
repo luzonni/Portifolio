@@ -48,20 +48,14 @@ const Content = styled.div`
     
     h1 {
         color: ${White};
-        font-size: 1.75rem;
-    }
-
-    strong {
-        font-size: 2.25rem;
-        color: ${ColorOne};
-        font-weight: 700;
-        border-bottom: 0.3rem solid ${ColorTwo};
+        font-size: 3rem;
     }
 
     p {
         width: 40rem;
         color: ${Gray};
     }
+
     @media screen and (max-width: 1080px) {
         width: 100%;
         padding: 0 2rem;
@@ -71,14 +65,6 @@ const Content = styled.div`
             color: ${White};
             font-size: 1rem;
         }
-
-        strong {
-            font-size: 1.5rem;
-            color: ${ColorOne};
-            font-weight: 700;
-            border-bottom: 0;
-        }
-
         p {
             width: 100%;
             color: ${Gray};
@@ -91,16 +77,8 @@ const PresentationSection = () => {
         <PresentationSectionStyle>
             <img src="./imgs/me.jpeg" alt="" />
             <Content>
-                <h1>Olá! Meu nome é <strong>Lucas Zonzini Lisboa</strong></h1>
-                <p>Desenvolvedor Junior Java.</p>
-                <p>Em 2020, despertei uma intensa curiosidade em explorar a criação de jogos de computador. 
-                    Desde então, tenho dedicado meu tempo incessantemente para aprimorar minhas habilidades 
-                    na arte da programação. A busca constante pelo conhecimento tornou-se uma parte essencial 
-                    do meu percurso, levando-me a absorver tudo relacionado a novas linguagens, APIs, bibliotecas, 
-                    sistemas e muito mais. Até o presente momento, meu deleite consiste em utilizar meu tempo 
-                    livre para programar e desenvolver meus próprios jogos. Meu grande sonho é transformar 
-                    essa paixão em uma carreira concreta, trabalhando com códigos e contribuindo para a 
-                    indústria de desenvolvimento de sistemas.</p>
+                <h1>Lucas Zonzini Lisboa</h1>
+                <p>Engenheiro de Software | Cientista de dados | Explorador</p>
             </Content>
         </PresentationSectionStyle>
     )

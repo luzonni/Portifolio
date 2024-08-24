@@ -62,6 +62,9 @@ function SkillsSection({ Skills }) {
                             <h1>{skill.Title}</h1>
                             <hr />
                             <p>{skill.Period}</p>
+                            {skill.Url && 
+                                <a href="{skill.Url}" target="_blank">teste</a>
+                            }
                         </CardSkillStyle>
                     )
                 })}

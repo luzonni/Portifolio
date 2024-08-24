@@ -6,40 +6,43 @@
             "Bacharelado em Ciências da Computação",
             "Nota 5 no MAC"
         ],
-        "Institution":"Unima Alagoas",
+        "Institution":"Unima Afya Alagoas",
         "CertificateURL":""
     },
     {
-        "Name":"Formação Java",
+        "Name":"Certificação Java",
         "Period":"2020",
         "Texts":[
-            "Formação completa Java",
-            "POO",
-            "Threads"
+            "Certificação Java SE 8 Programmer"
+        ],
+        "Institution":"Alura",
+        "CertificateURL":"https://cursos.alura.com.br/user/lu-zonni/degree-certificacao-java-2386/certificate"
+    },
+    {
+        "Name":"Certificação POO com Java",
+        "Period":"2020",
+        "Texts":[
+            "Java JRE e JDK: compile e execute o seu programa",
+            "Java OO: entendendo a Orientação a Objetos",
+            "Java Polimorfismo: entenda herança e interfaces",
+            "Java Exceções: aprenda a criar, lançar e controlar exceções",
+            "Java e java.lang: programe com a classe Object e String",
+            "Java e java.util: Coleções, Wrappers e Lambda expressions",
+            "Java e java.io: Streams, Reader e Writers",
+            "Java Collections: Dominando Listas, Sets e Mapas"
         ],
         "Institution":"Alura",
         "CertificateURL":"https://cursos.alura.com.br/degree/certificate/43724c02-424a-48ad-a011-1cc13d52fe4b?lang=pt_BR"
     },
     {
-        "Name":"Formação Java",
-        "Period":"2020",
+        "Name":"Certificação Kotlin",
+        "Period":"01.2023",
         "Texts":[
-            "Formação completa Java",
-            "POO",
-            "Threads"
+            "Kotlin: desenvolvendo sua primeira aplicação",
+            "Kotlin: evoluindo a aplicação com OO",
+            "Kotlin: persistindo dados com Hibernate"
         ],
         "Institution":"Alura",
-        "CertificateURL":"https://cursos.alura.com.br/degree/certificate/43724c02-424a-48ad-a011-1cc13d52fe4b?lang=pt_BR"
-    },
-    {
-        "Name":"Formação Java",
-        "Period":"2020",
-        "Texts":[
-            "Formação completa Java",
-            "POO",
-            "Threads"
-        ],
-        "Institution":"Alura",
-        "CertificateURL":"https://cursos.alura.com.br/degree/certificate/43724c02-424a-48ad-a011-1cc13d52fe4b?lang=pt_BR"
+        "CertificateURL":"https://cursos.alura.com.br/user/lu-zonni/degree-kotlin-636664/certificate"
     }
 ]

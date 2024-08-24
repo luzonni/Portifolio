@@ -22,7 +22,7 @@ const TabStyle = styled.div`
 
     .selected {
         color: ${ColorOne};
-        border-bottom: 0.5rem solid ${ColorOne};
+        border-bottom: 0.25rem solid ${ColorOne};
     }
 
     .tab_button {
