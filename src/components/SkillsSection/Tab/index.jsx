@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { ColorOne, ColorTwo, Gray } from "../../../assets/Colors"
+import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 
 const TabStyle = styled.div`
     width: 100%;
@@ -9,14 +10,13 @@ const TabStyle = styled.div`
     ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     li {
-        width: 100%;
         text-align: center;
-        padding: 1rem 2rem;
-        border-bottom: 0.5rem solid ${ColorTwo};
+        padding: 1rem 6rem;
+        border-bottom: 0.25rem solid ${ColorTwo};
         cursor: pointer;
     }
 
@@ -30,19 +30,20 @@ const TabStyle = styled.div`
     }
 
     @media screen and (max-width: 1080px) {
-        font-size: 1em;
+        font-size: 1.25em;
         li {
-            padding: 1rem 0;
+            padding: 1rem 1rem;
             display: none;
         }
 
         .tab_button {
             display: block;
-            width: 30%;
+            width: 100%;
         }
 
         .selected {
             display: block;
+            border-bottom: 0.25rem solid ${ColorOne};
         }
     }
 
@@ -66,13 +67,13 @@ const Tab = ({ Tabs, Index, setTab }) => {
     return (
         <TabStyle>
             <ul>
-                <li className="tab_button" onClick={() => minusTab()}>{"<"}</li>
+                <li className="tab_button" onClick={() => minusTab()}><FaCaretLeft/></li>
                 {Tabs.map((tab, index) => {
                     return (
                         <li key={index} className={tab === Tabs[Index] && "selected"} onClick={() => setTab(index)}>{tab}</li>
                     )
                 })}
-                <li className="tab_button" onClick={() => plusTab()}>{">"}</li>
+                <li className="tab_button" onClick={() => plusTab()}><FaCaretRight/></li>
             </ul>
         </TabStyle>
     )

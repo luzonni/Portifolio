@@ -47,6 +47,18 @@ const CardStyle = styled.div`
         color: ${ColorOne};
         background-color: ${White};
     }
+
+    @media screen and (max-width: 1080px) {
+        .link {
+            font-size: 1rem;
+            padding: 0.75rem;
+            border-radius: 10px;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+
 `
 
 const Title = styled.div`
@@ -64,6 +76,16 @@ const Title = styled.div`
 
     .tools img {
         width: 2rem;
+    }
+
+    @media screen and (max-width: 1080px) {
+    
+        h1 {
+            font-size: 1.25rem;
+        }
+        .tools img {
+            width: 1.5rem;
+        }
     }
 
 `

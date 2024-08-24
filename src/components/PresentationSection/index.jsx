@@ -44,7 +44,7 @@ const Content = styled.div`
     flex-direction: column;
     gap: 1rem;
     padding: 1.25rem;
-    backdrop-filter: blur(12px);
+    //backdrop-filter: blur(12px);
     
     h1 {
         color: ${White};
