@@ -11,17 +11,58 @@
             "Title":"Code Break's Escape",
             "Period":"01.2022",
             "Url":"https://github.com/luzonni/Code-Breakers-Escape"
+        },
+        {
+            "Title":"2D game tile maker",
+            "Period":"01.2022",
+            "Url":"https://github.com/luzonni/TileMaker"
         }
     ],
     [
         {
             "Title":"Java",
-            "Period":"01.2020",
+            "Period":"01.2020 ~ 02.2022",
             "Url":""
         },
         {
             "Title":"Kotlin",
             "Period":"01.2024 ~ 02.2024",
+            "Url":""
+        },
+        {
+            "Title":"Python",
+            "Period":"01.2023",
+            "Url":""
+        },
+        {
+            "Title":"JavaScript",
+            "Period":"01.2024 ~ 02.2024",
+            "Url":""
+        },
+        {
+            "Title":"PHP",
+            "Period":"01.2020 ~ 02.2020",
+            "Url":""
+        }
+        
+    ],
+    [
+        {
+            "Title":"Jetpack Compose Android",
+            "Period":"01.2024",
+            "Url":""
+        },
+        {
+            "Title":"Angular",
+            "Period":"02.2023",
+            "Url":""
+        }
+
+    ],
+    [
+        {
+            "Title":"React",
+            "Period":"02.2024",
             "Url":""
         }
     ]

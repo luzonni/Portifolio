@@ -67,7 +67,7 @@ const CardSkillStyle = styled.div`
 `
 
 function SkillsSection({ Skills }) {
-    const tabs = ["Experience", "Software", "Language"]
+    const tabs = ["Experiences", "Software", "Languages", "Frameworks", "Libraries"]
     const [indexTab, setIndexTab] = useState(0)
     return (
         <SkillsStyle>
