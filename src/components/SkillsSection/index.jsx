@@ -50,19 +50,25 @@ const CardSkillStyle = styled.div`
         border: 1px solid ${Gray};
     }
 
-    a {
-        font-size: 1rem;
-        margin-top: 1rem;
-        background-color: ${ColorOne};
-        color: ${White};
-        text-decoration: none;
-        padding: 0.5rem 2rem;
-        border-radius: 5px;
-    }
-
     @media screen and (max-width: 1080px) {
         font-size: 1rem;
         padding: 1rem 2rem;
+    }
+`
+
+const LinkedButton = styled.a`
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color: ${ColorOne};
+    color: ${White};
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    transition: 120ms;
+
+    &:hover {
+        color: ${ColorOne};
+        background-color: ${White};
     }
 `
 
@@ -81,7 +87,7 @@ function SkillsSection({ Skills }) {
                             <hr />
                             <p>{skill.Period}</p>
                             {skill.Url && 
-                                <a href={skill.Url} target="_blank">Veja sobre</a>
+                                <LinkedButton href={skill.Url} target="_blank">Veja mais</LinkedButton>
                             }
                         </CardSkillStyle>
                     )

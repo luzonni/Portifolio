@@ -15,7 +15,7 @@
     },
     {
         "Name":"Trom Game",
-        "Thumb":"https://github.com/user-attachments/assets/25f2ecf8-28e0-4b54-bc13-384f97d1a618",
+        "Thumb":"./imgs/TromGame.png",
         "Icons":["./icons/java.svg"],
         "Texts":[
             "O famoso jogo Trom",
