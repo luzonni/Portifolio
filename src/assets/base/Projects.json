@@ -1,16 +1,12 @@
 [
     {
-        "Name":"Wanderer",
-        "Thumb":"./imgs/Wanderer.png",
-        "Icons":["./icons/java.svg"],
-        "Texts":["Sandbox Game, um jogo de mundo aberto e geração aleatoria para explorar!"],
-        "Link":["https://github.com/luzonni/Wanderer"]
-    },
-    {
         "Name":"Code Break's Escape",
         "Thumb":"./imgs/CDB.png",
         "Icons":["./icons/java.svg"],
-        "Texts":["Sandbox Game, um jogo de mundo aberto e geração aleatoria para explorar!"],
+        "Texts":[
+            "Um jogo de estratégia, onde o jogador precisa conjugar movimentos ágeis e comandos específicos para passar de cada nível.",
+            "Use sua criatividade para fazer seus próprios níveis e compartilhar com seus amigos!"
+        ],
         "Link":["https://github.com/luzonni/Wanderer"]
     },
     {

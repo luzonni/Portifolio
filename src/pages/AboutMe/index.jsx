@@ -1,16 +1,17 @@
 import styled from "styled-components"
-import { ColorOne } from "../../assets/Colors"
+import AboutMeSection from "../../components/AboutMeSection"
+import HobbySection from "../../components/HobbySection"
+import Hobbies from "../../assets/base/Hobbies.json"
 
-const AboutStyle = styled.div`
-    h2 {
-        color: ${ColorOne};
-    }
+const AboutStyle = styled.main`
+    
 `
 
 const AboutMe = () => {
     return (
         <AboutStyle>
-            <h2>Sobre mim!</h2>
+            <AboutMeSection/>
+            <HobbySection Hobbies={Hobbies}/>
         </AboutStyle>
     )
 }

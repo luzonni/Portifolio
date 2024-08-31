@@ -15,7 +15,7 @@ const TabStyle = styled.div`
 
     li {
         text-align: center;
-        padding: 1rem 6rem;
+        padding: 1rem 2rem;
         border-bottom: 0.25rem solid ${ColorTwo};
         cursor: pointer;
     }

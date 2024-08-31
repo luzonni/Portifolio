@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import { ColorOne, ColorTwo, Gray, White } from "../../assets/Colors"
+import { Gray, White } from "../../assets/Colors"
+import AppDock from "../AppDock"
 
 
 const PresentationSectionStyle = styled.section`
@@ -44,7 +45,7 @@ const Content = styled.div`
     flex-direction: column;
     gap: 1rem;
     padding: 1.25rem;
-    //backdrop-filter: blur(12px);
+    align-items: start;
     
     h1 {
         color: ${White};
@@ -79,6 +80,7 @@ const PresentationSection = () => {
             <Content>
                 <h1>Lucas Zonzini Lisboa</h1>
                 <p>Engenheiro de Software | Cientista de dados | Explorador</p>
+                <AppDock />
             </Content>
         </PresentationSectionStyle>
     )

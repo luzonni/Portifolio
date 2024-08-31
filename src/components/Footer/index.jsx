@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { ColorOne, White } from "../../assets/Colors"
+import AppDock from "../AppDock"
 
 const FooterStyle = styled.footer`
     display: flex;
@@ -47,34 +48,11 @@ const FooterStyle = styled.footer`
     }
 `
 
-const SocialStyle = styled.span`
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    img {
-        width: 3rem;
-    }
-    a {
-        color: ${White};
-        text-decoration: none;
-        font-size: 1.5rem;
-    }
-    @media screen and (max-width: 1080px) {
-        justify-content: center;
-        img {
-            width: 2rem;
-        }
-    }
-`
-
 const Footer = () => {
     return (
         <FooterStyle>
             <h1>By <strong>Lucas Zonzini Lisboa</strong> with React</h1>
-            <div className="social">
-                <SocialStyle><img src="./icons/instagram_icon.svg" alt="" /><a href="https://www.instagram.com/lucaszonzini_/" target="_blank">@lucaszonzini_</a></SocialStyle>
-                <SocialStyle><img src="./imgs/github_icon.png" alt="" /><a href="https://github.com/luzonni" target="_blank">luzonni</a></SocialStyle>
-            </div>
+            <AppDock />
             <h3>© 2024</h3>
         </FooterStyle>
     )

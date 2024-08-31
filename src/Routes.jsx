@@ -18,7 +18,6 @@ function AppRoutes() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/AboutMe" element={<AboutMe />}/>
-          <Route path="/Contato" element={<Contact />}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

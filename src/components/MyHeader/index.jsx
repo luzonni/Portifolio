@@ -116,13 +116,11 @@ const MyHeader = () => {
                     <div className="burguer__list" onClick={showing} >
                         <MyLink to="/">Home</MyLink>
                         <MyLink to="/AboutMe">Sobre mim</MyLink>
-                        <MyLink to="/Contato">Contato</MyLink>
                     </div>
                 </BurguerStyle>
                 <ul className="navegation__list">
                     <li className="list__item"><MyLink to="/">Home</MyLink></li>
-                    <li className="list__item"><MyLink to="/AboutMe">Sobre mim</MyLink></li>
-                    <li className="list__item"><MyLink to="/Contato">Contato</MyLink></li>
+                    <li className="list__item"><MyLink to="/AboutMe">About Me</MyLink></li>
                 </ul>
             </Navegation>
         </StyleMenu>
