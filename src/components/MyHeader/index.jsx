@@ -2,6 +2,8 @@ import styled from "styled-components"
 import { ColorOne, ColorThree, ColorHole, White } from "../../assets/Colors"
 import MyLink from "./MyLink"
 import { useState } from "react"
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 
 const StyleMenu = styled.header`
     display: flex;
@@ -75,7 +77,9 @@ const Navegation = styled.nav`
 
 const BurguerStyle = styled.div`
     display: none;
-    img {
+    .iconBurguer {
+        color: ${White};
+        font-size: 5rem;
         width: 2.5rem;
     }
     .burguer__list {
@@ -112,7 +116,9 @@ const MyHeader = () => {
             <Logo><h1>Z</h1>onzini</Logo>
             <Navegation>
                 <BurguerStyle show={isShow}>
-                    <button className="burguer__button" onClick={showing}><img src="./icons/burguer.svg" alt="burguer" /></button>
+                    <button className="burguer__button" onClick={showing}>
+                        {isShow ? <IoMdClose className="iconBurguer"/> : <GiHamburgerMenu className="iconBurguer"/>}
+                    </button>
                     <div className="burguer__list" onClick={showing} >
                         <MyLink to="/">Home</MyLink>
                         <MyLink to="/AboutMe">Sobre mim</MyLink>
