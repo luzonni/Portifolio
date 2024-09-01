@@ -12,7 +12,7 @@ const StyleMenu = styled.header`
     background: linear-gradient(0deg, ${ColorHole} 0%, ${ColorThree} 100%);
 
     @media screen and (max-width: 1080px) { 
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 0.5rem;
     }
 `
 
@@ -76,7 +76,7 @@ const Navegation = styled.nav`
 const BurguerStyle = styled.div`
     display: none;
     img {
-        width: 3rem;
+        width: 2.5rem;
     }
     .burguer__list {
         display: ${props => {
