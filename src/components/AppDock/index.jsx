@@ -26,7 +26,8 @@ const AppsDockStyle = styled.div`
     }
 
     @media screen and (max-width: 1080px) {
-        gap: 0;
+        margin: 0 auto;
+        gap: 2rem;
         padding: 1rem;
         justify-content: space-between;
         box-sizing: border-box;

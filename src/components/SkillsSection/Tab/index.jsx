@@ -8,12 +8,13 @@ const TabStyle = styled.div`
     font-size: 1.5rem;
 
     ul {
+        width: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: stretch;
     }
 
     li {
+        width: 100%;
         text-align: center;
         padding: 1rem 2rem;
         border-bottom: 0.25rem solid ${ColorTwo};

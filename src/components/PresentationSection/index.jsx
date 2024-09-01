@@ -61,14 +61,17 @@ const Content = styled.div`
         width: 100%;
         padding: 0 2rem;
         text-align: center;
+        align-items: center;
         box-sizing: border-box;
         h1 {
             color: ${White};
-            font-size: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
         }
         p {
             width: 100%;
             color: ${Gray};
+            margin-bottom: 7rem;
         }
     }
 `

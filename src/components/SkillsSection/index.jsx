@@ -7,7 +7,7 @@ import Tab from "./Tab"
 const SkillsStyle = styled.section`
     color: ${White};
     width: 80%;
-    margin: 4rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;

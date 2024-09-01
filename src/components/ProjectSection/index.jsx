@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard"
 
 const ProjectSectionStyle = styled.section`
     width: 80%;
-    margin: 4rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     @media screen and (max-width: 1080px) {
         width: 90%;
     }
