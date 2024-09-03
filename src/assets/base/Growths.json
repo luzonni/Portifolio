@@ -44,5 +44,87 @@
         ],
         "Institution":"Alura",
         "CertificateURL":"https://cursos.alura.com.br/degree/certificate/b99307b7-e2ae-42ea-8859-acb948e9be9a?lang=pt_BR"
+    },
+    {
+        "Name":"Curso Kotlin: Primeira aplicação",
+        "Period":"01.2023",
+        "Texts":[
+            "Consumindo uma API de Jogos",
+            "Modelando a aplicação",
+            "Tratamento de erros e refatoração",
+            "Aprimorando a busca",
+            "Implementando a lista de Jogos"
+        ],
+        "Institution":"Alura",
+        "CertificateURL":"https://cursos.alura.com.br/certificate/575fc23c-8505-477b-b389-bfbf0c5caac0?lang=pt_BR"
+    },
+    {
+        "Name":"Curso Jetpack Compose: criando um app android",
+        "Period":"01.2023",
+        "Texts":[
+            "Começando com Jetpack Compose",
+            "Criando os primeiros componentes",
+            "Personalizando o design do app",
+            "Criando a seção de produtos",
+            "Ajustando detalhes dos Composables",
+            "Organizando os componentes e telas"
+        ],
+        "Institution":"Alura",
+        "CertificateURL":"https://cursos.alura.com.br/certificate/90b1acb4-9da4-4577-94d0-6d2380039700?lang=pt_BR"
+    },
+    {
+        "Name":"Curso Jetpack Compose: formulário e gerenciamento de estado",
+        "Period":"01.2023",
+        "Texts":[
+            "Implementando formulário dos produtos",
+            "Cadastrando produtos",
+            "Melhorando os campos de textos",
+            "Salvando produtos",
+            "Gerenciando estados",
+            "Melhorando o State Holder"
+        ],
+        "Institution":"Alura",
+        "CertificateURL":"https://cursos.alura.com.br/certificate/a09faf1b-65c8-4ae1-8be9-7a11cddaf91e?lang=pt_BR"
+    },
+    {
+        "Name":"Curso Jetpack Compose: utilizando Lazy Layout e estados",
+        "Period":"01.2023",
+        "Texts":[
+            "Carregando imagens via URL",
+            "Utilizando Lazy Layouts",
+            "Implementando composables com estado",
+            "Personalizando com Slot API",
+            "Implementado a lista de cards",
+            "Filtrando os produtos"
+        ],
+        "Institution":"Alura",
+        "CertificateURL":"https://cursos.alura.com.br/certificate/85fab325-e586-4a87-aff7-cb159a52dfcc?lang=pt_BR"
+    },
+    {
+        "Name":"Curso Kotlin: persistindo dados com Hibernate",
+        "Period":"01.2023",
+        "Texts":[
+            "Utilizando banco de dados",
+            "Bibliotecas ORM",
+            "Generics",
+            "Persistindo aluguéis",
+            "Desafio"
+        ],
+        "Institution":"Alura",
+        "CertificateURL":"https://cursos.alura.com.br/certificate/21a0c654-3410-4e72-ab0d-8fee9843185a?lang=pt_BR"
+    },
+    {
+        "Name":"Curso React: desenvolvendo em React Router com JavaScript",
+        "Period":"01.2023",
+        "Texts":[
+            "Criando o ''Olá Mundo''",
+            "SPA com react-router-dom",
+            "Rotas aninhadas",
+            "Rotas dinâmicas",
+            "Finalizando o projeto"
+        ],
+        "Institution":"Alura",
+        "CertificateURL":"https://cursos.alura.com.br/certificate/d7b02cca-2e29-4bff-9f34-0f4bd501564f?lang=pt_BR"
     }
+    
 ]
