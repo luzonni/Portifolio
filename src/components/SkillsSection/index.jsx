@@ -2,7 +2,7 @@ import styled from "styled-components"
 import SectionTitle from "../SectionTitle"
 import { ColorOne, ColorTwo, Gray, White } from "../../assets/Colors"
 import { useState } from "react"
-import Tab from "./Tab"
+import Tab from "../Tab"
 
 const SkillsStyle = styled.section`
     color: ${White};

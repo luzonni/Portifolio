@@ -3,6 +3,7 @@ import { MdKeyboardArrowLeft as LeftArrow, MdKeyboardArrowRight as RightArrow} f
 import SectionTitle from "../SectionTitle";
 import { ColorOne, ColorTwo, Gray, White } from "../../assets/Colors";
 import { useState } from "react";
+import Tab from "../Tab";
 
 
 const HobbyStyle = styled.section`
@@ -26,6 +27,12 @@ const HobbyStyle = styled.section`
     .changeButton:hover {
         color: ${White};
     }
+
+    .hobby_tab {
+        margin-top: 1rem;
+        display: none;
+    }
+
     @media screen and (max-width: 1080px) {
         width: 90%;
         margin: 2rem auto 0 auto;
@@ -34,6 +41,9 @@ const HobbyStyle = styled.section`
         }
         .changeButton {
             display: none;
+        }
+        .hobby_tab {
+            display: block;
         }
     }
 `
@@ -82,6 +92,7 @@ const CardHobby = styled.div`
 `
 
 const HobbySection = ({Hobbies}) => {
+    const Tabs = Hobbies.map(hobby => hobby.Title)
     const [indexHobby, setIndexHobby] = useState(0)
     const changeHobby = (newIndex) => {
         if(newIndex > Hobbies.length-1) {
@@ -94,6 +105,9 @@ const HobbySection = ({Hobbies}) => {
     return (
         <HobbyStyle>
             <SectionTitle>My <strong>Hobbies</strong></SectionTitle>
+            <div className="hobby_tab">
+                <Tab Tabs={Tabs} setTab={setIndexHobby} Index={indexHobby}/>
+            </div>
             <div className="container__hobbies">
                 <button className="changeButton" onClick={() => changeHobby(indexHobby-1)}><LeftArrow size="4rem"/></button>
                 <CardHobby key={indexHobby}>

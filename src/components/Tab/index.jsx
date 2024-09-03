@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { ColorOne, ColorTwo, Gray } from "../../../assets/Colors"
+import { ColorOne, ColorTwo, Gray } from "../../assets/Colors"
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 
 const TabStyle = styled.div`
