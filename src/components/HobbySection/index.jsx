@@ -7,7 +7,7 @@ import Tab from "../Tab";
 
 
 const HobbyStyle = styled.section`
-    width: 70%;
+    width: 80%;
     margin: 4rem auto 0 auto;
     .container__hobbies {
         width: 100%;
