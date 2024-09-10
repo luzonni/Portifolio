@@ -2,28 +2,42 @@
     {
         "Year":"2003",
         "Content":[
-            "Nascido em Juazeiro da Bahia.",
-            "Morei lá até meus 8 aninhos",
-            "Morei lá até meus 8 aninhos",
-            "Morei lá até meus 8 aninhos"
+            "Nascido em Juazeiro da Bahia."
         ]
     },{
         "Year":"2011",
-        "Content":["Me mudei para Maceió Alagoas."]
+        "Content":[
+            "Me mudei para Maceió Alagoas."
+        ]
     },{
         "Year":"2019",
-        "Content":["Primeiro contato com programação, no ensino médio, com a Engine Unity."]
+        "Content":[
+            "Primeiro contato com programação, no ensino médio, com a Engine Unity.",
+            "Fiz meu primeiro projeto, um jogo para um trabalho da escola."
+        ]
     },{
         "Year":"2020",
-        "Content":["Comecei a realmente estudar com profundidade programação, com linguagem Java."]
+        "Content":[
+            "Comecei a realmente estudar com profundidade programação, com linguagem Java.",
+            "Explorei a linguagem Java, criando pequenos projetos e aprimorando meus conhecimentos."
+        ]
     },{
         "Year":"2021",
-        "Content":["Parti para outras ferramentas, como PHP e MySQL para desenvolvimento FullStack."]
+        "Content":[
+            "Parti para outras ferramentas, como PHP e MySQL para desenvolvimento FullStack.",
+            "Consegui uma oportunidade para contribuir para o desenvolvimento do site da DragonPack Embalagens."
+        ]
     },{
         "Year":"2022",
-        "Content":["Dediquei para me aprofundar em projetos particulares e entender a fundo sobre Java."]
+        "Content":[
+            "Dediquei para me aprofundar em projetos particulares e entender a fundo sobre Java.",
+            "Fiz vários cursos e formaçẽos de Java."
+        ]
     },{
         "Year":"2023",
-        "Content":["Iniciei minha Faculdade em Bacharelado de Cinências da Computação."]
+        "Content":[
+            "Iniciei minha Faculdade em Bacharelado de Cinências da Computação.",
+            "Explorando o mundo da programação Mobile."
+        ]
     }
 ]

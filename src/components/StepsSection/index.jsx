@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import SectionTitle from "../SectionTitle"
-import { ColorOne, White } from "../../assets/Colors"
+import { ColorOne, Gray, White } from "../../assets/Colors"
 
 const StepsStyle = styled.section`
     width: 80%;
@@ -27,6 +27,10 @@ const StepByStep = styled.ul`
         display: flex;
         flex-direction: column;
         gap: 1rem;
+    }
+    p {
+        border-left: 2px solid ${Gray};
+        padding-left: 0.5rem;
     }
 `
 
