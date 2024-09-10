@@ -1,32 +1,41 @@
 [
     {
         "Name":"Code Break's Escape",
-        "Thumb":"./imgs/CDB.png",
+        "Thumb":"/imgs/CDB.png",
         "Icons":["./icons/java.svg"],
         "Texts":[
             "Um jogo de estratégia, onde o jogador precisa conjugar movimentos ágeis e comandos específicos para passar de cada nível.",
             "Use sua criatividade para fazer seus próprios níveis e compartilhar com seus amigos!"
         ],
-        "Link":["https://github.com/luzonni/Wanderer"]
+        "Link":[
+            "https://github.com/luzonni/Code-Breakers-Escape",
+            "https://api.github.com/repos/luzonni/Code-Breakers-Escape/readme"
+        ]
     },
     {
         "Name":"Trom Game",
-        "Thumb":"./imgs/TromGame.png",
+        "Thumb":"/imgs/TromGame.png",
         "Icons":["./icons/java.svg"],
         "Texts":[
             "O famoso jogo Trom",
             "Multplayer local para jogar com seus amigos!"
         ],
-        "Link":["https://github.com/luzonni/Trom"]
+        "Link":[
+            "https://github.com/luzonni/Trom",
+            "https://api.github.com/repos/luzonni/Trom/readme"
+        ]
     },
     {
         "Name":"Tile Creater",
-        "Thumb":"./imgs/TileCreater.png",
+        "Thumb":"/imgs/TileCreater.png",
         "Icons":["./icons/java.svg"],
         "Texts":[
             "Um aplicativo para criação de modelo para o jogo Wanderer!",
             "A partir de uma umagem quadrada de um Bloco, ele separa e cria todas as suas variações de conexões"
         ],
-        "Link":["https://github.com/luzonni/Wanderer"]
+        "Link":[
+            "https://github.com/luzonni/TileMaker",
+            "https://api.github.com/repos/luzonni/TileMaker/readme"
+        ]
     }
 ]

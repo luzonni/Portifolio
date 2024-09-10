@@ -34,7 +34,7 @@ const ProjectSection = ({Projects}) => {
                             Thumb={project.Thumb} 
                             Icons={project.Icons}
                             Texts={project.Texts}
-                            URL={project.Link}
+                            URL={project.Link[0]}
                         />
                     )
                 })}
