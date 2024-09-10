@@ -1,10 +1,14 @@
 import styled from "styled-components"
 import SectionTitle from "../SectionTitle"
-import { ColorOne, Gray, White } from "../../assets/Colors"
+import { ColorOne, ColorTwo, Gray, White } from "../../assets/Colors"
 
 const StepsStyle = styled.section`
     width: 80%;
     margin: 4rem auto 0 auto;
+    @media screen and (max-width: 1080px) {
+        width: 90%;
+        margin: 2rem auto 0 auto;
+    }
 `
 
 const StepByStep = styled.ul`
@@ -27,10 +31,30 @@ const StepByStep = styled.ul`
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        p {
+            border-left: 2px solid ${Gray};
+            padding-left: 0.5rem;
+        }
     }
-    p {
-        border-left: 2px solid ${Gray};
-        padding-left: 0.5rem;
+    @media screen and (max-width: 1080px) {
+        margin-top: 1rem;
+        padding: 0;
+        gap: 2rem;
+        border-left: 4px solid ${ColorOne};
+        .step_item {
+            font-size: 1rem;
+            gap: 0;
+            h1 {
+                padding: 0 0.5rem;
+                font-size: 1.25rem;
+            }
+        }
+        .contents {
+            border-left: 2px solid ${ColorOne};
+            p {
+                border: 0;
+            }
+        }
     }
 `
 

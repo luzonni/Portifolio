@@ -149,7 +149,7 @@ const ProjectCard = ({Name, Thumb, Icons, Texts, URL}) => {
             {Texts.map((text, index) => {
                 return (<p key={"pct-"+index} >{text}</p>)
             })}
-            <Link className="link" to={`/Projecrs/${Name}`}>Saiba mais</Link>
+            <Link className="link" to={`/Project/${Name}`}>Saiba mais</Link>
         </CardStyle>
     )
 }
