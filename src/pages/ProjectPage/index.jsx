@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom"
 import Projects from "../../assets/base/Projects.json"
 import { FaProjectDiagram } from "react-icons/fa";
 import { useEffect, useState } from "react";
-import ReactMarkdown from 'react-markdown';
+import GitHubFrame from "./GitHubFrame";
 
 
 const ProjectPageStyle = styled.main`
@@ -58,7 +58,7 @@ const ProjectPage = () => {
             <Banner>
                 <img src={project.Thumb} alt="Project Banner" />
             </Banner>
-            <ReactMarkdown>{readme}</ReactMarkdown>
+            <GitHubFrame MarckDown={readme} Link={project.Link[0]}/>
         </ProjectPageStyle>
     )
 }
