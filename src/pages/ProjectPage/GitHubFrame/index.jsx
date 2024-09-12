@@ -5,7 +5,6 @@ import { Gray, White } from "../../../assets/Colors";
 import ReactMarkdown from 'react-markdown';
 
 const FrameStyle = styled.section`
-margin-top: 2rem;
     color: ${White};
     background-color: #0d1017;
     border: 2px solid #3f434b;
@@ -38,15 +37,20 @@ const Content = styled.div`
     box-sizing: border-box;
     h1 {
         font-size: 3rem;
-        border-bottom: 2px solid ${Gray};
+        border-bottom: 1px solid ${Gray};
         padding: 0.5rem 0;
-        margin: 0.5rem 0;
+        margin: 1.5rem 0;
     }
     h2 {
         font-size: 2rem;
-        border-bottom: 2px solid ${Gray};
-        padding: 0 0.5rem;
-        margin: 0 0.5rem;
+        border-bottom: 1px solid ${Gray};
+        padding: 0.5rem 0;
+        margin: 0.5rem 0;
+    }
+    h3 {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+        margin: 0.5rem 0;
     }
     p {
         padding: 1rem;

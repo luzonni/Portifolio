@@ -37,7 +37,8 @@ const Title = styled.h1`
     padding: 1rem;
     border-radius: 10px; 
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    margin: 1rem 0;
     .icon {
         color: ${ColorOne};
     }
