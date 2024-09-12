@@ -13,7 +13,6 @@ function AppRoutes() {
     <>
       <Reset />
       <BrowserRouter>
-        <Message>Site em desenvolvimento</Message>
         <MyHeader />
         <Routes>
           <Route path="/" element={<Home />} />
