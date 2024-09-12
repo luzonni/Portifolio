@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { ColorOne, ColorThree, ColorHole, White } from "../../assets/Colors"
-import MyLink from "./MyLink"
+import MyLink from "../MyLink"
 import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";

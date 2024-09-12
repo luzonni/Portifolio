@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom"
 import styled from "styled-components"
-import { White, ColorOne } from "../../../assets/Colors"
+import { White, ColorOne } from "../../assets/Colors"
 
 
 const Style = styled.div`

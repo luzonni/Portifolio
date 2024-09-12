@@ -1,22 +1,35 @@
 import styled from "styled-components"
-import { ColorOne, White } from "../../assets/Colors"
+import { ColorOne, ColorTwo, Gray, White } from "../../assets/Colors"
 import { useParams } from "react-router-dom"
 import Projects from "../../assets/base/Projects.json"
 import { FaProjectDiagram } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import GitHubFrame from "./GitHubFrame";
+import MyLink from "../../components/MyLink";
+import { IoMdArrowRoundBack } from "react-icons/io";
+
 
 
 const ProjectPageStyle = styled.main`
     width: 80%;
     margin: 4rem auto;
-    position: relative;
+    .back {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border-bottom: 4px solid ${ColorTwo};
+        margin: 1rem 0;
+    }
+    .icon {
+        font-size: 3rem;
+        transition: 120ms;
+    }
+    .back :hover {
+        color: ${ColorOne};
+    }
 `
 
 const Title = styled.h1`
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
     display: flex;
     gap: 1rem;
     font-size: 3.5rem;
@@ -54,10 +67,13 @@ const ProjectPage = () => {
     }, []);
     return (
         <ProjectPageStyle>
-            <Title className="title"><FaProjectDiagram className="icon"/> {project.Name}</Title>
+            <div className="back">
+                <MyLink to={"/"}><IoMdArrowRoundBack className="icon"/></MyLink>
+            </div>
             <Banner>
                 <img src={project.Thumb} alt="Project Banner" />
             </Banner>
+            <Title className="title"><FaProjectDiagram className="icon"/> {project.Name}</Title>
             <GitHubFrame MarckDown={readme} Link={project.Link[0]}/>
         </ProjectPageStyle>
     )
