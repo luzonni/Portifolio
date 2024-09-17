@@ -74,7 +74,7 @@ const Content = styled.div`
             font-size: 1.5rem;
             margin-bottom: 0.25rem;
         }
-        h2 {
+        h3 {
             font-size: 1rem;
             margin-bottom: 0.25rem;
         }
