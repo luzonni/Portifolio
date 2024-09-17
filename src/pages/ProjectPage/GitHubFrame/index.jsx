@@ -39,7 +39,7 @@ const Content = styled.div`
         font-size: 3rem;
         border-bottom: 1px solid ${Gray};
         padding: 0.5rem 0;
-        margin: 1.5rem 0;
+        margin-bottom: 1.5rem;
     }
     h2 {
         font-size: 2rem;

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { ColorOne, ColorTwo, Gray, White } from "../../assets/Colors"
+import { ColorOne, ColorTwo, White } from "../../assets/Colors"
 import { useParams } from "react-router-dom"
 import Projects from "../../assets/base/Projects.json"
 import { FaProjectDiagram } from "react-icons/fa";
@@ -16,9 +16,9 @@ const ProjectPageStyle = styled.main`
     .back {
         display: flex;
         align-items: center;
-        padding: 1rem;
+        padding-bottom: 1rem;
         border-bottom: 4px solid ${ColorTwo};
-        margin: 1rem 0;
+        margin-bottom: 1rem;
     }
     .icon {
         font-size: 3rem;
@@ -64,7 +64,7 @@ const ProjectPage = () => {
         })
         .then((response) => response.text())
         .then((data) => setReadme(data))
-        .catch((error) => console.error('Erro ao buscar README:', error));
+        .catch((error) => "Erro ai carregar a API");
     }, []);
     return (
         <ProjectPageStyle>
