@@ -27,6 +27,16 @@ const ProjectPageStyle = styled.main`
     .back :hover {
         color: ${ColorOne};
     }
+    @media screen and (max-width: 1080px) {
+        width: 90%;
+        margin: 0 auto 2rem auto;
+        .icon {
+            font-size: 2rem;
+        }
+        .back {
+            border-bottom: 2px solid ${ColorTwo};
+        }
+    }
 `
 
 const Title = styled.h1`
@@ -41,6 +51,12 @@ const Title = styled.h1`
     margin: 1rem 0;
     .icon {
         color: ${ColorOne};
+    }
+    @media screen and (max-width: 1080px) {
+        font-size: 1.25rem;
+        .icon {
+            font-size: 1.25rem;
+        }
     }
 `
 

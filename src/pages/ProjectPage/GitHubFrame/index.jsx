@@ -30,6 +30,11 @@ const Tab = styled.ul`
     .selected {
         border-bottom: 2px solid #f18570;
     }
+    @media screen and (max-width: 1080px) {
+        .tab_item {
+            font-size: 0.75rem;
+        }
+    }
 `
 
 const Content = styled.div`
@@ -58,6 +63,25 @@ const Content = styled.div`
     }
     img {
         max-width: 20rem;
+    }
+    @media screen and (max-width: 1080px) {
+        padding: 1rem;
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+        h2 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+        p {
+            font-size: 0.75rem;
+            padding: 0.25rem;
+        }
     }
 `
 
