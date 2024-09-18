@@ -22,6 +22,7 @@ const ProjectPageStyle = styled.main`
     }
     .icon {
         font-size: 3rem;
+        
         transition: 120ms;
     }
     .back :hover {

@@ -67,7 +67,7 @@ const Content = styled.div`
     @media screen and (max-width: 1080px) {
         padding: 1rem;
         h1 {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             margin-bottom: 0.25rem;
         }
         h2 {

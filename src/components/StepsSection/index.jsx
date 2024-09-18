@@ -50,8 +50,9 @@ const StepByStep = styled.ul`
             }
         }
         .contents {
-            border-left: 2px solid ${ColorOne};
+            border-left: 3px solid ${ColorOne};
             p {
+                padding: 0.5rem;
                 border: 0;
             }
         }
