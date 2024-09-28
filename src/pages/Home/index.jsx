@@ -12,8 +12,8 @@ const Home = () => {
         <>
             <PresentationSection />
             <SkillsSection Skills={Skills} />
-            <ProjectSection Projects={Projects}/>
-            <GrowthSection Growths={Growths}/>
+            <ProjectSection Projects={Projects} />
+            <GrowthSection Growths={Growths} />
         </>
     )
 }
