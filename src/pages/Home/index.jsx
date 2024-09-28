@@ -9,6 +9,7 @@ import GrowthSection from "../../components/GrowthSection"
 
 const Home = () => {
     return (
+        //Hi!
         <>
             <PresentationSection />
             <SkillsSection Skills={Skills} />
