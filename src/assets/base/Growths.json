@@ -42,7 +42,9 @@
             "React: como os componentes funcionam",
             "React: desenvolvendo em React Router com JavaScript",
             "React: estilize componentes com Styled Components e manipule arquivos estáticos",
-            "React: gerencie estados globalmente com Context API"
+            "React: gerencie estados globalmente com Context API",
+            "React: praticando React com Js",
+            "React: migrando para TypeScript"
         ],
         "Institution":"Alura",
         "CertificateURL":"https://cursos.alura.com.br/degree/certificate/5e88bd60-2009-4e93-90c3-af64ac9048f5?lang=pt_BR"
