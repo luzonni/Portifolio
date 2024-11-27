@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { ColorOne, ColorThree, ColorHole, White } from "../../assets/Colors"
+import { ColorOne, ColorThree, ColorHole, Font_One } from "../../assets/Colors"
 import MyLink from "../MyLink"
 import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -35,7 +35,7 @@ const Logo = styled.h1`
     }
     &:hover {
         gap: 0;
-        color: ${White};
+        color: ${Font_One};
         h1 {
             transform: rotate(0turn);
             border: 0;
@@ -44,7 +44,7 @@ const Logo = styled.h1`
 
     @media screen and (max-width: 1080px) {
         width: 100%;
-        color: ${White};
+        color: ${Font_One};
         gap: 0;
         font-size: 2rem;
         h1 {
@@ -78,7 +78,7 @@ const Navegation = styled.nav`
 const BurguerStyle = styled.div`
     display: none;
     .iconBurguer {
-        color: ${White};
+        color: ${Font_One};
         font-size: 5rem;
         width: 2.5rem;
     }

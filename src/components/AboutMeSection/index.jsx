@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import SectionTitle from "../SectionTitle"
-import { Gray, White } from "../../assets/Colors"
+import { Font_Two } from "../../assets/Colors"
 
 const AboutStyled = styled.section`
     .container__apresentation {
@@ -20,7 +20,7 @@ const AboutStyled = styled.section`
     }
     .container__content p {
         padding-top: 1rem;
-        color: ${Gray};
+        color: ${Font_Two};
     }
     @media screen and (max-width: 1080px) {
         .container__apresentation {

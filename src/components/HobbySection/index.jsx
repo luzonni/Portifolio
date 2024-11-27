@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { MdKeyboardArrowLeft as LeftArrow, MdKeyboardArrowRight as RightArrow} from "react-icons/md";
 import SectionTitle from "../SectionTitle";
-import { ColorOne, ColorTwo, Gray, White } from "../../assets/Colors";
+import { ColorOne, ColorTwo, Font_Two, Font_One } from "../../assets/Colors";
 import { useState } from "react";
 import Tab from "../Tab";
 
@@ -25,7 +25,7 @@ const HobbyStyle = styled.section`
     }
 
     .changeButton:hover {
-        color: ${White};
+        color: ${Font_One};
     }
 
     .hobby_tab {
@@ -69,7 +69,7 @@ const CardHobby = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        color: ${White};
+        color: ${Font_One};
         font-size: 1.5rem;
         background-color: ${ColorOne};
         padding: 0.5rem;
@@ -77,12 +77,12 @@ const CardHobby = styled.div`
     }
     h2 {
         font-size: 1.5rem;
-        color: ${White};
+        color: ${Font_One};
     }
     p {
         width: 90%;
         margin: 0 auto;
-        color: ${Gray};
+        color: ${Font_Two};
         size: 4rem;
     }
     @media screen and (max-width: 1080px) {
@@ -115,7 +115,7 @@ const HobbySection = ({Hobbies}) => {
                         <h1>{indexHobby+1}°</h1>
                         <h2>{Hobbies[indexHobby].Title}</h2>
                     </div>
-                    {Hobbies[indexHobby].Content.map(text => <p>{text}</p>)}
+                    {Hobbies[indexHobby].Content.map((text, index) => <p key={index}>{text}</p>)}
                 </CardHobby>
                 <button className="changeButton" onClick={() => changeHobby(indexHobby+1)}><RightArrow size="4rem"/></button>
             </div>

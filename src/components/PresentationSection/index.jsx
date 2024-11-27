@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Gray, White } from "../../assets/Colors"
+import { Font_Two, Font_One } from "../../assets/Colors"
 import AppDock from "../AppDock"
 
 
@@ -48,13 +48,13 @@ const Content = styled.div`
     align-items: start;
     
     h1 {
-        color: ${White};
+        color: ${Font_One};
         font-size: 3rem;
     }
 
     p {
         width: 40rem;
-        color: ${Gray};
+        color: ${Font_Two};
     }
 
     @media screen and (max-width: 1080px) {
@@ -64,13 +64,13 @@ const Content = styled.div`
         align-items: center;
         box-sizing: border-box;
         h1 {
-            color: ${White};
+            color: ${Font_One};
             font-size: 1.5rem;
             font-weight: 700;
         }
         p {
             width: 100%;
-            color: ${Gray};
+            color: ${Font_Two};
             margin-bottom: 7rem;
         }
     }

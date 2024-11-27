@@ -3,12 +3,13 @@ import { BiSolidError } from "react-icons/bi";
 
 
 import styled from "styled-components"
-import { ColorOne, Gray, White } from "../../assets/Colors"
+import { ColorOne, Font_Two, Font_One } from "../../assets/Colors"
+import { Link } from "react-router-dom";
 
 const ErrorStyle = styled.section`
     width: 80%;
     margin: 8rem auto;
-    color: ${Gray};
+    color: ${Font_Two};
     display: flex;
     justify-content: center;
     padding: 3rem;
@@ -26,6 +27,14 @@ const ErrorStyle = styled.section`
         .error {
             font-size: 8rem;
         }
+    }
+    .backHome {
+        text-decoration: none;
+        color: ${Font_One};
+        padding: 1rem;
+        border-radius: 6px;
+        margin-top: 1rem;
+        background-color: ${ColorOne};
     }
 
     @media screen and (max-width: 1080px){
@@ -50,6 +59,7 @@ const NotFound = () => {
                 <TbError404 className="error" color={ColorOne}/>
             </div>
             <h1>Page not found...</h1>
+            <Link className="backHome" to={"/"}>Back to Home</Link>
         </ErrorStyle>
     )
 }

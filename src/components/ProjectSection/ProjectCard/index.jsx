@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { ColorOne, ColorThree, ColorTwo, Gray, White } from "../../../assets/Colors"
+import { ColorOne, ColorThree, ColorTwo, Font_Two, Font_One } from "../../../assets/Colors"
 import { Link } from "react-router-dom"
 
 const CardStyle = styled.div`
@@ -9,7 +9,7 @@ const CardStyle = styled.div`
     flex-direction: column;
     gap: 1.5rem;
     padding: 1.5rem;
-    color: ${White};
+    color: ${Font_One};
     border-radius: 12px;
 
     img {
@@ -20,19 +20,19 @@ const CardStyle = styled.div`
 
     p {
         padding: 0 1rem;
-        color: ${Gray};
+        color: ${Font_Two};
     }
 
     hr {
         width: 100%;
         margin: 0;
-        border-color: ${Gray};
+        border-color: ${Font_Two};
     }
 
     .link {
-        color: ${White};
+        color: ${Font_One};
         padding: 1rem 1.5rem;
-        color: ${White};
+        color: ${Font_One};
         font-size: 1.5rem;
         text-decoration: none;
         background-color: ${ColorOne};
@@ -45,7 +45,7 @@ const CardStyle = styled.div`
 
     .link:hover {
         color: ${ColorOne};
-        background-color: ${White};
+        background-color: ${Font_One};
     }
 
     @media screen and (max-width: 1080px) {

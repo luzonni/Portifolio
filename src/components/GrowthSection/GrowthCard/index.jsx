@@ -1,20 +1,33 @@
 import styled from "styled-components"
-import { ColorOne, ColorTwo, Gray, White } from "../../../assets/Colors"
+import { HiAcademicCap } from "react-icons/hi";
+import { TbCertificate } from "react-icons/tb";''
+import { ColorOne, ColorTwo, Font_Two, Font_One } from "../../../assets/Colors"
 
 
 const CardStyle = styled.div`
-    position: relative;
-    border-left: 4px solid ${ColorTwo};
-    color: ${White};
-    padding: .6rem 2rem;
+    color: ${Font_One};
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    .icon__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .line {
+        width: 0.4rem;
+        background-color: ${ColorTwo};
+        height: 100%;
+        border-radius: 0 0 4px 4px;
+    }
     h1 {
         font-size: 1.5rem;
     }
     strong {
-        color: ${Gray};
+        color: ${Font_Two};
     }
     p {
-        color: ${Gray};
+        color: ${Font_Two};
     }
     ul {
         display: flex;
@@ -24,15 +37,19 @@ const CardStyle = styled.div`
         padding: 0 2rem;
     }
     li::marker {
-        color: ${Gray};
+        color: ${Font_Two};
     }
     .content {
+        padding: 1.5rem 0;
         display: flex;
         gap: 1rem;
         flex-direction: column;
     }
+    .icon__content {
+
+    }
     @media screen and (max-width: 1080px) {
-        padding: 0.5rem 1rem;
+        padding: 0;
         width: 100%;
         h1 {
             font-size: 1.25rem;
@@ -59,13 +76,12 @@ const CertificateButton = styled.a`
     box-sizing: border-box;
     text-align: center;
     transition: 250ms;
-    img {
-        width: 2rem;
-        transition: 250ms;
-    }
+    color: ${Font_One};
+    font-size: 2rem;
 
     &:hover {
-        background-color: ${ColorTwo};
+        background-color: ${Font_One};
+        color: ${ColorOne};
     }
 
     &:hover img {
@@ -74,31 +90,21 @@ const CertificateButton = styled.a`
 `
 
 const IconCardStyle = styled.div`
-    position: absolute;
     background: ${ColorOne};
     background: linear-gradient(180deg, ${ColorOne} 40%, ${ColorTwo} 100%);
     padding: .75rem;
     border-radius: 50%;
-    left: -2.4rem;
-    top: -1rem;
-    img {
-        width: 3rem;
-    }
-
-    @media screen and (max-width: 1080px) {
-        left: -1.6rem;
-        top: -0.25rem;
-        img {
-            width: 1.5rem;
-        }
-    }
+    color: white;
 `
 
 const GrowthCard = ({Name, Period, Texts, Institution, CertificateURL}) => {
     return (
         <CardStyle>
+            <div className="icon__card">
+                <IconCardStyle><HiAcademicCap size={"3rem"}/></IconCardStyle>
+                <span className="line"></span>
+            </div>
             <div className="content">
-                <IconCardStyle><img src="./imgs/course_icon.png" alt="Course Icon" /></IconCardStyle>
                 <PeriodStyle><h3>{Period}</h3></PeriodStyle>
                 <h1>{Name} {Institution && <strong> - {Institution}</strong>}</h1>
                 <ul>
@@ -107,8 +113,8 @@ const GrowthCard = ({Name, Period, Texts, Institution, CertificateURL}) => {
                     })}
                 </ul>
                 {CertificateURL && 
-                    <CertificateButton href={CertificateURL} target="__#">
-                        <img className="icon" src="./icons/certificate.svg" alt="Icone" />
+                    <CertificateButton href={CertificateURL} target="_blank">
+                        <TbCertificate/>
                     </CertificateButton>
                 }
                 

@@ -1,6 +1,6 @@
 import { FaLinkedin, FaGithub, FaInstagramSquare } from "react-icons/fa";
 import styled from "styled-components"
-import { Gray, White } from "../../assets/Colors";
+import { Font_Two, Font_One } from "../../assets/Colors";
 
 
 const AppsDockStyle = styled.div`
@@ -14,14 +14,14 @@ const AppsDockStyle = styled.div`
     -webkit-backdrop-filter: blur(10px); 
     border-radius: 15px;
     .app {
-        color: ${White};
+        color: ${Font_One};
         font-size: 3rem;
         transition: 120ms;
         display: flex;
         align-items: center;
     }
     .app:hover {
-        color: ${Gray};
+        color: ${Font_Two};
         transform: scale(1.5);
     }
 

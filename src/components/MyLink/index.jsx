@@ -1,12 +1,12 @@
 import { Link, useLocation } from "react-router-dom"
 import styled from "styled-components"
-import { White, ColorOne } from "../../assets/Colors"
+import { Font_One, ColorOne } from "../../assets/Colors"
 
 
 const Style = styled.div`
     box-sizing: border-box;
     .link {
-        color: ${White};
+        color: ${Font_One};
         text-decoration: none;
         font-size: 1.5rem;
         font-weight: 500;

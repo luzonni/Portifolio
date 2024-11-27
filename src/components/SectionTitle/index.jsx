@@ -1,8 +1,8 @@
 import styled from "styled-components"
-import { ColorOne, White } from "../../assets/Colors"
+import { ColorOne, Font_One } from "../../assets/Colors"
 
 const TitleStyle = styled.h1`
-    color: ${White};
+    color: ${Font_One};
     font-size: 2rem;
     strong {
         color: ${ColorOne};

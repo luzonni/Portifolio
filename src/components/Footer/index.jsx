@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { ColorOne, White } from "../../assets/Colors"
+import { ColorOne, Font_One } from "../../assets/Colors"
 import AppDock from "../AppDock"
 
 const FooterStyle = styled.footer`
@@ -9,7 +9,7 @@ const FooterStyle = styled.footer`
     flex-direction: column;
     padding: 2rem;
     background-color: ${ColorOne};
-    color: ${White};
+    color: ${Font_One};
     justify-content: center;
     font-size: 1.25rem;
     strong {

@@ -1,11 +1,11 @@
 import styled from "styled-components"
 import SectionTitle from "../SectionTitle"
-import { ColorOne, ColorTwo, Gray, White } from "../../assets/Colors"
+import { ColorOne, ColorTwo, Font_Two, Font_One } from "../../assets/Colors"
 import { useState } from "react"
 import Tab from "../Tab"
 
 const SkillsStyle = styled.section`
-    color: ${White};
+    color: ${Font_One};
     width: 80%;
     margin: 2rem auto 0 auto;
     display: flex;
@@ -41,13 +41,13 @@ const CardSkillStyle = styled.div`
     align-items: center;
 
     p {
-        color: ${Gray};
+        color: ${Font_Two};
         text-align: center;
     }
 
     hr {
         width: 100%;
-        border: 1px solid ${Gray};
+        border: 1px solid ${Font_Two};
     }
 
     @media screen and (max-width: 1080px) {
@@ -60,7 +60,7 @@ const LinkedButton = styled.a`
     font-size: 1rem;
     margin-top: 1rem;
     background-color: ${ColorOne};
-    color: ${White};
+    color: ${Font_One};
     text-decoration: none;
     padding: 0.5rem 2rem;
     border-radius: 5px;
@@ -68,7 +68,7 @@ const LinkedButton = styled.a`
 
     &:hover {
         color: ${ColorOne};
-        background-color: ${White};
+        background-color: ${Font_One};
     }
 `
 
@@ -80,9 +80,9 @@ function SkillsSection({ Skills }) {
             <SectionTitle>My <strong>Skills</strong></SectionTitle>
             <Tab Tabs={tabs} Index={indexTab} setTab={setIndexTab}/>
             <FrameSkillsStyle>
-                {Skills[indexTab].map(skill => {
+                {Skills[indexTab].map((skill, index) => {
                     return (
-                        <CardSkillStyle>
+                        <CardSkillStyle key={"card_skills_"+index}>
                             <h1>{skill.Title}</h1>
                             <hr />
                             <p>{skill.Period}</p>

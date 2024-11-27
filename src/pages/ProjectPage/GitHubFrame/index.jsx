@@ -1,11 +1,10 @@
 import { GoBook } from "react-icons/go";
 import { FaGithub } from "react-icons/fa";
 import styled from "styled-components";
-import { Gray, White } from "../../../assets/Colors";
 import ReactMarkdown from 'react-markdown';
 
 const FrameStyle = styled.section`
-    color: ${White};
+    color: white;
     background-color: #0d1017;
     border: 2px solid #3f434b;
     border-radius: 6px;
@@ -22,7 +21,7 @@ const Tab = styled.ul`
         padding: 1rem 1.25rem;
         font-size: 1.25rem;
         a {
-            color: ${White};
+            color: white;
             text-decoration: none;
         }
     }
@@ -42,13 +41,13 @@ const Content = styled.div`
     box-sizing: border-box;
     h1 {
         font-size: 3rem;
-        border-bottom: 1px solid ${Gray};
+        border-bottom: 1px solid #acacac;
         padding: 0.5rem 0;
         margin-bottom: 1.5rem;
     }
     h2 {
         font-size: 2rem;
-        border-bottom: 1px solid ${Gray};
+        border-bottom: 1px solid #acacac;
         padding: 0.5rem 0;
         margin: 0.5rem 0;
     }
@@ -59,7 +58,7 @@ const Content = styled.div`
     }
     p {
         padding: 1rem;
-        color: ${Gray};
+        color: #acacac;
     }
     img {
         max-width: 20rem;

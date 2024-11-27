@@ -1,10 +1,10 @@
 import styled from "styled-components"
-import { ColorOne, ColorTwo, Gray } from "../../assets/Colors"
+import { ColorOne, ColorTwo, Font_Two } from "../../assets/Colors"
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 
 const TabStyle = styled.div`
     width: 100%;
-    color: ${Gray};
+    color: ${Font_Two};
     font-size: 1.5rem;
 
     ul {

@@ -20,7 +20,7 @@ const ListGrowthsStyle = styled.div`
     @media screen and (max-width: 1080px) {
         width: 100%;
         box-sizing: border-box;
-        padding: 3rem 1rem;
+        padding: 3rem 0rem;
     }
 `
 

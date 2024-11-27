@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import SectionTitle from "../SectionTitle"
-import { ColorOne, ColorTwo, Gray, White } from "../../assets/Colors"
+import { ColorOne, Font_Two, Font_One } from "../../assets/Colors"
 
 const StepsStyle = styled.section`
     width: 80%;
@@ -15,7 +15,7 @@ const StepByStep = styled.ul`
     display: flex;
     flex-direction: column;
     padding: 2rem 4rem;
-    color: ${White};
+    color: ${Font_One};
     gap: 3rem;
     .step_item{
         display: flex;
@@ -32,7 +32,7 @@ const StepByStep = styled.ul`
         flex-direction: column;
         gap: 1rem;
         p {
-            border-left: 2px solid ${Gray};
+            border-left: 2px solid ${Font_Two};
             padding-left: 0.5rem;
         }
     }
@@ -59,18 +59,17 @@ const StepByStep = styled.ul`
     }
 `
 
-
 const StepsSection = ({Steps}) => {
     return (
         <StepsStyle>
             <SectionTitle>Until <strong>Here</strong></SectionTitle>
             <StepByStep>
                 {Steps && 
-                    Steps.map(step => (
-                        <li className="step_item">
+                    Steps.map((step, index)=> (
+                        <li className="step_item" key={"step_"+index}>
                             <h1>{step.Year}</h1> 
                             <div className="contents">
-                                {step.Content.map(c => <p>{c}</p>)}
+                                {step.Content.map((c, index) => <p key={"content_steps_"+index}>{c}</p>)}
                             </div>
                         </li>
                     ))}

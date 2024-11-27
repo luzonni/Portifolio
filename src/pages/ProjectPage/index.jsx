@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { ColorOne, ColorTwo, White } from "../../assets/Colors"
+import { ColorOne, ColorTwo, Font_One } from "../../assets/Colors"
 import { useParams } from "react-router-dom"
 import Projects from "../../assets/base/Projects.json"
 import { FaProjectDiagram } from "react-icons/fa";
@@ -44,7 +44,7 @@ const Title = styled.h1`
     display: flex;
     gap: 1rem;
     font-size: 3.5rem;
-    color: ${White};
+    color: ${Font_One};
     padding: 1rem;
     border-radius: 10px; 
     backdrop-filter: blur(10px);
