@@ -8,8 +8,6 @@ import GitHubFrame from "./GitHubFrame";
 import MyLink from "../../components/MyLink";
 import { IoMdArrowRoundBack } from "react-icons/io";
 
-
-
 const ProjectPageStyle = styled.main`
     width: 80%;
     margin: 4rem auto;
@@ -19,6 +17,14 @@ const ProjectPageStyle = styled.main`
         padding-bottom: 1rem;
         border-bottom: 4px solid ${ColorTwo};
         margin-bottom: 1rem;
+    }
+    .description {
+        color: ${Font_One};
+        font-size: 1.5rem;
+        padding: 2rem;
+        p {
+            margin-top: 1rem;
+        }
     }
     .icon {
         font-size: 3rem;
@@ -91,6 +97,11 @@ const ProjectPage = () => {
             <Banner>
                 <img src={project.Thumb} alt="Project Banner" />
             </Banner>
+            <div className="description">
+                {project.Texts.map(text => {
+                    return <p>{text}</p>
+                })}
+            </div>
             <Title className="title"><FaProjectDiagram className="icon"/> {project.Name}</Title>
             <GitHubFrame MarckDown={readme} Link={project.Link[0]}/>
         </ProjectPageStyle>
